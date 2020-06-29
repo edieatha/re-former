@@ -1,9 +1,9 @@
-<%# Manual form creation %>
+<%# Manual form creation
 
 <form action = "/users" method="POST" name = "users" accept-charset="UTF-8">
     <input type = "hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-    <label for="user[username]">Username</label> <br>
+    <%# <label for="user[username]">Username</label> <br>
     <input id="username" type="text" name="user[username]"> <br>
     
     <label for="user[email]">Email</label> <br>
@@ -12,6 +12,23 @@
     <label for="user[password]">Password</label> <br>
     <input id="password" type="password" name="user[password]"> <br>
 
-    <input id="submit" type="submit" value="create user">
+    <input id="submit" type="submit" value="create user"> %>
 
-</form>
+<%# </form> %> 
+
+
+<%# Form_tag %>
+<%= form_tag("/users") do%>
+    <%= label_tag "Username"%> <br>
+    <%= text_field_tag "username"%>
+
+    <%= label_tag "Email" %> <br>
+    <%= email_field_tag "email"%>
+
+    <%= label_tag "Password"%> <br>
+    <%= password_field_tag "password","secret"%>
+
+    <%= submit_tag "Create User" %>
+
+<%end%>
+
