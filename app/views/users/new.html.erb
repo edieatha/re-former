@@ -1,7 +1,7 @@
 <%# Manual form creation %>
 
 <form action = "/users" method="POST" name = "users" accept-charset="UTF-8">
-    <input type = "hidden" name="authenticity_token" value="<%= form_authenticity_token %>%">
+    <input type = "hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
     <label for="user[username]">Username</label> <br>
     <input id="username" type="text" name="user[username]"> <br>
