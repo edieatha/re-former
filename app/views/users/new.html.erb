@@ -1,0 +1,51 @@
+<%# Manual form creation
+
+<form action = "/users" method="POST" name = "users" accept-charset="UTF-8">
+    <input type = "hidden" name="authenticity_token" value="<%= form_authenticity_token %>
+
+    <%# <label for="user[username]">Username</label> <br>
+    <input id="username" type="text" name="user[username]"> <br>
+    
+    <label for="user[email]">Email</label> <br>
+    <input id="email" type="email" name="user[email]"> <br>
+
+    <label for="user[password]">Password</label> <br>
+    <input id="password" type="password" name="user[password]"> <br>
+
+    <input id="submit" type="submit" value="create user"> %>
+
+<%# </form> %> 
+
+
+<%# Form_tag %>
+<%# <%= form_tag("/users") do%>
+    <%# <%= label_tag "Username"%>
+    <%# <%= text_field_tag "username"%>
+
+    <%# <%= label_tag "Email" %>
+    <%# <%= email_field_tag "email"%> 
+
+    <%# <%= label_tag "Password"%>
+    <%# <%= password_field_tag "password","secret"%>
+
+    <%# <%= submit_tag "Create User" %> 
+
+<%# <%end%> 
+
+
+<%= form_for @user do |f| %>
+     
+    <%= f.label :username, 'Your Username Here' %> <br>
+    <%= f.text_field :username, placeholder: 'Your Username Here' %> <br>
+
+    <%= f.label :email, 'Your Email Here' %> <br>
+    <%= f.email_field :email, placeholder: 'example@example.com' %> <br>
+
+    <%= f.label :password %> <br>
+    <%= f.password_field :password %> <br>
+
+    <%= f.submit %>
+
+<%end%>
+
+
