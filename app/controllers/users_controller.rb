@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     if @user.save
         @user.update(user_params)
-        redirect_to users_path
+        redirect_to new_user_path
     else
         render :edit
     end
