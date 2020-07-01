@@ -4,7 +4,7 @@
     <img src="app/assets/images/microverse.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h2 align="center">Bare Metal Forms and Helpers</h2>
+  <h2 align="center">Members Only</h2>
 
   <p align="center">
     This project is part of the Microverse curriculum in Ruby on Rails module!
@@ -13,7 +13,7 @@
 
 ## About The Project
 
-These projects will give you a chance to actually build some forms, both using nearly-pure HTML and then graduating to using the helper methods that Rails provides.
+In this project, you’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
 
 <!-- INSTALLATION -->
 ## Installation
@@ -29,16 +29,6 @@ You need to have this app or tools to start using it:
 ### Usage
 
 Once you have started the server, visit the browser at `http://localhost3000/` 
-
-### Create User:
-
-![screenshoot](img.png)
-
-
-## Edit user:
-
-![screenshoot](img2.png)
-`
 
 ### Built With
 
