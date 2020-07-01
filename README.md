@@ -13,7 +13,7 @@
 
 ## About The Project
 
-In this project, you’ll be building an exclusive clubhouse where your members can write embarrassing posts about non-members. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the story and wonder who wrote it.
+These projects will give you a chance to actually build some forms, both using nearly-pure HTML and then graduating to using the helper methods that Rails provides.
 
 <!-- INSTALLATION -->
 ## Installation
@@ -29,6 +29,16 @@ You need to have this app or tools to start using it:
 ### Usage
 
 Once you have started the server, visit the browser at `http://localhost3000/` 
+
+### Create User:
+
+![screenshoot](img.png)
+
+
+## Edit user:
+
+![screenshoot](img2.png)
+`
 
 ### Built With
 
